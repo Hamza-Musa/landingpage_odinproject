@@ -1,5 +1,5 @@
 body {
-    background-color: aquamarine;
+    background-color: whitesmoke;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -26,14 +26,20 @@ header, .intro{
     font-size: 48px;
     font-weight: bolder;
     align-self: flex-end;
-    border: 1px solid brown;
     height: 100px;
 }
 
-.sidekick-text, li {
-    color: #e5e7eb;
+.sidekick-text.li {
+    color: black;
     font-size: 18px;
 }
+
+.sidekick-text {
+    color: white;
+    font-size: 18px;
+}
+
+
 
 button {
     background-color: #f7601b;
@@ -71,18 +77,17 @@ a:hover {
 .intro {
     height: 100vh;
     gap: 32px;
-    border: 3px solid blue;
 }
 
 .intro-text {
     margin-left: 15%;
     display: flex;
     flex-flow: column wrap;
-    border: 3px dotted blue;
     flex: 1;
 }
 
 .image {
+    background-color: crimson;
     flex: 1;
     display: flex;
     align-self: stretch;
@@ -130,4 +135,93 @@ img {
 .card {
     max-width: 150px;
     color: #1f293700;
+    transition: ease-in .7s;
+}
+
+.card:hover {
+    color: #f9faf8;
+}
+
+.content-img {
+    width: 144px;
+    height: 144px;
+    border: 3px solid #f7601b; 
+    background-image: linear-gradient(180deg, #f7691b, rgba(0, 0, 0, 0));
+    border-radius: 20px;
+    transition: ease 0.1s;
+}
+
+.content-img:hover {
+    transform:scale(1.05);
+}
+
+.quote {
+    padding: 80px 35%;
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    color: orange;
+    text-shadow: 0 0 5px orange,
+    0 0 15px black, 
+    0 0 30px black;
+}
+
+
+
+.author {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.sign-up-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    padding: 36px;
+    background-color: #f7601b;
+    border-radius: 5px;
+    margin: 100px auto;
+    color: #f9faf8;
+    flex-flow: row wrap;
+}
+
+.sign-up-section button {
+    border: 2px solid #f9faf8;
+}
+
+button:hover {
+    background-color: #f9faf8;
+    color: #f7601b;
+}
+
+.sign-up-section p {
+    margin: 0px;
+}
+
+.small {
+    font-size: 12px;
+}
+
+footer {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 24px 0px;
+    align-self: stretch;
+}
+
+@media only screen and (max-width: 783px){
+    .intro-text {
+        margin-right: 15%;
+        height: 200px;
+    }
+    .image{
+        margin-left: 15%;
+        height: 200px;
+    }
+
+    .card{
+        color: #f9faf8;
+    }
 }
