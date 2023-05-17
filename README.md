@@ -9,7 +9,7 @@ Landing page utilizes flex to display elements on the page.
 
 ## Preview
 
-###Follow link: https://xxhmu54.github.io/landingpage_odinproject/index.html###
+### Follow link: https://xxhmu54.github.io/landingpage_odinproject/index.html ###
 
 <img width="1280" alt="Screenshot 2023-05-17 at 14 26 14" src="https://github.com/XxHMu54/landingpage_odinproject/assets/98530123/29a05eaa-6ce9-427f-abfa-b8fd98f63188">
 
